@@ -1,0 +1,33 @@
+
+<nav class="new-nav" ng-init="init()" data-ng-include data-src="'../partials/second-nav.html'">
+</nav>
+
+<div class="content">
+<form name="orderform" ng-submit="submit()" form-autofill-fix novalidate>
+
+    <label>Product-Name:</label><span class="product-name">{{productName}}</span><br>
+    <label>Name:</label>
+    <input class="order-input" title="text" ng-model="name" placeholder="name" name="name" valid-name required/><br>
+
+    <label>Address:</label>
+    <input class="order-input" id="street" title="text" ng-model="address" placeholder="address" name="address" required/><br>
+
+    <label>City:</label>
+    <input class="order-input" id="city" title="text" ng-model="city" placeholder="city" name="city" required/>
+
+    <label>State:</label>
+    <input class="order-input" id="state" title="text" ng-model="state" placeholder="state" name="state" required/>
+
+    <label>Zip-Code:</label>
+    <input class="order-input" id="ZIP" title="number" ng-model="zip" placeholder="zip" name="zip" required/>
+
+    <label>Phone:</label>
+    <input class="order-input" title="number" ng-model="number" placeholder="number" name="number" valid-number minlength="10" maxlength="10" required/>
+
+    <label>Quantity:</label>
+    <input class="order-input" title="number" ng-model="quantity" placeholder="quantity" name="quantity" valid-number required/>
+
+    <input type="submit" class="submit-order" value="Submit" ng-disabled="orderform.$invalid" />
+</form>
+
+</div>

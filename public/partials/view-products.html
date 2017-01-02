@@ -1,0 +1,21 @@
+<nav class="new-nav">
+    <ul class="search-nav">
+        <li>
+            <input type="search" ng-model="searchText">
+        </li>
+        <li>
+            <input type="submit" value="Search" ng-click="search()">
+        </li>
+    </ul>
+</nav>
+
+ <h2 class="text-center"><em>Here are the Products</em></h2>
+
+ <div ng-init="initProduct()" class="product-view">
+     <ul>
+    <li ng-repeat="product in results">
+        <a href="/productInfo/{{product.id}}">{{product.name}}</a>
+    </li>
+     </ul>
+</div>
+

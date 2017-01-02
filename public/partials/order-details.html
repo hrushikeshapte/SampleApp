@@ -1,0 +1,13 @@
+<div class="text-center product-detail product-info" ng-init="initDetails()">
+ <ul>
+    <li><label>Name:</label>{{detailInfo[0].name}}</li>
+     <li><label>Address:</label>{{detailInfo[0].address}}</li>
+     <li><label>City:</label>{{detailInfo[0].city}}</li>
+     <li><label>State:</label>{{detailInfo[0].state}}</li>
+     <li><label>Zip:</label>{{detailInfo[0].zip}}</li>
+     <li><label>Phone:</label>{{detailInfo[0].phone}}</li>
+     <li><label>Quantity:</label>{{detailInfo[0].quantity}}</li>
+ </ul>
+    <a href="#" ng-click="deleteOrder()"><input type="submit" value="Delete Order"> </a>
+    <a href="/productInfo"><input type="submit" value="Back to Products"></a>
+</div>

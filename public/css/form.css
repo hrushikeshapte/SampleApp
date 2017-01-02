@@ -1,0 +1,74 @@
+form{
+    left: -50%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background-color: #EDF2F7;
+    padding: 40px;
+    color:black;
+    max-width: 100%;
+}
+
+.login-form{
+    font-size:16px;
+}
+
+form > label{
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    float:left;
+    clear:both;
+}
+
+form > select{
+    float:left;
+}
+
+form > span{
+    float:left;
+}
+
+.text-input,
+.order-input{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    background: -webkit-gradient(linear, left top, left 25, from(#EDF2F7), to( #ffffff));
+    background: -moz-linear-gradient(top, #EDF2F7,  #ffffff 25px);
+}
+
+.text-input:focus,
+.text-input:hover,
+.order-input:focus,
+.order-input:hover{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+.submit,
+.submit-order{
+    float: left;
+    clear: both;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+
+   form > label{
+       display: block;
+       float: none;
+   }
+
+    form > span{
+        float: none;
+    }
+
+    .text-input{
+        float: none;
+    }
+}

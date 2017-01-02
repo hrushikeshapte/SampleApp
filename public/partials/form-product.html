@@ -1,0 +1,32 @@
+
+<form name="myform" ng-submit="submit()" novalidate>
+
+    <label>Name:</label>
+    <input class="text-input" title="text" ng-model="name" placeholder="name" name="name" valid-name required/><br>
+
+    <label>Description:</label>
+    <input class="text-input" title="text" ng-model="description" placeholder="description" name="description" required/><br>
+
+    <label>Width:</label>
+    <input class="text-input" title="number" ng-model="width" placeholder="width" name="width" valid-number required/>
+    <select ng-model="widthSelect" ng-options="metric as metric.name for metric in metricsInfo"></select><br>
+
+    <label>Length:</label>
+    <input class="text-input" title="number" ng-model="length" placeholder="length" name="length" valid-number required/>
+    <select ng-model="lengthSelect" ng-options="metric as metric.name for metric in metricsInfo"></select><br>
+
+    <label>Height:</label>
+    <input class="text-input" title="number" ng-model="height" placeholder="height" name="height" valid-number required/>
+    <select ng-model="heightSelect" ng-options="metric as metric.name for metric in metricsInfo"></select><br>
+
+    <label>Weight:</label>
+    <input class="text-input" title="number" ng-model="weight" placeholder="weight" name="weight" valid-number required/>
+    <select ng-model="weightSelect" ng-options="weight as weight.name for weight in weightInfo"></select><br>
+
+    <label>Value:</label>
+    <input class="text-input" title="number" ng-model="value" placeholder="value" name="value" valid-number required/>
+    <span>USD</span>
+
+    <input type="submit" class="submit" value="Submit" ng-disabled="myform.$invalid" />
+</form>
+

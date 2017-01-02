@@ -1,0 +1,11 @@
+<nav class="new-nav" data-ng-include data-src="'../partials/second-nav.html'">
+</nav>
+
+<div ng-init="init()" class="product-view">
+    <ul>
+    <li ng-repeat="order in orderInfo" class="product-results">
+       <a class="order-info" href="/orderDetails/{{order.order_id}}"><label>Name:</label>{{order.name}} <br>
+        <label>Quantity:</label>{{order.quantity}}<br><br></a>
+    </li>
+    </ul>
+</div>

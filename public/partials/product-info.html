@@ -1,0 +1,31 @@
+<nav class="new-nav" data-ng-include data-src="'../partials/second-nav.html'">
+</nav>
+
+<div ng-init="init()" class="text-center">
+<div class="product-detail product-info">
+ <ul>
+    <li><label>Name:</label><span>{{details[0].name}}</span></li>
+    <li><label>Description:</label><span>{{details[0].description}}</span></li>
+    <li><label>Width:</label><span>{{details[0].width}}</span><span>m</span></li>
+    <li><label>Length:</label><span>{{details[0].length}}</span><span>m</span></li>
+    <li><label>Height:</label><span>{{details[0].height}}</span><span>m</span></li>
+    <li><label>Weight:</label><span>{{details[0].weight}}</span><span>kg</span></li>
+    <li><label>Value:</label><span>{{details[0].value}}</span><span> {{currency}}</span></li>
+</ul>
+
+</div>
+
+<div class="dropdown currency-dropdown" disabled="isDisabled">
+    <button class="btn btn-primary dropdown-toggle currency-btn" type="button" id="menu" data-toggle="dropdown">Change currency
+        <span class="caret"></span></button>
+    <ul class="dropdown-menu currency-menu" role="menu" aria-labelledby="menu">
+        <li role="presentation"><a role="menuitem" href="#" ng-click="usdClick()">USD</a></li>
+        <li role="presentation"><a role="menuitem" href="#" ng-click="aedClick()">AED</a></li>
+        <li role="presentation"><a role="menuitem" href="#" ng-click="gbpClick()">GBP</a></li>
+        <li role="presentation"><a role="menuitem" href="#" ng-click="euroClick()">Euro</a></li>
+        <li role="presentation"><a role="menuitem" href="#" ng-click="inrClick()">INR</a></li>
+    </ul>
+</div>
+
+<input class="btn btn-primary" type="submit" value="Delete Product" ng-click="remove()">
+</div>

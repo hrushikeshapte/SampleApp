@@ -1,0 +1,15 @@
+<% include /partials/header.html %>
+        <div class="content">
+        <form name="login" ng-submit="loginForm()" class="login-form" novalidate>
+
+            <p><label>Username</label>
+                <input type="username" id="username" name="username" placeholder="username" ng-model="username" required></p>
+            <p><label>Password</label>
+                <input type="password" id="passwords" name="passwords" placeholder="password" ng-model="password" required></p>
+            <p>
+                <input type="submit" value="Login"></p>
+        </form>
+      </div>
+
+    </div>
+<% include /partials/footer.html %>
